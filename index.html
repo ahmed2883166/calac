@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>آلة حاسبة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="calculator" aria-label="آلة حاسبة">
+      <div class="topbar">
+        <span>آلة حاسبة</span>
+        <button id="theme-toggle" class="icon-button" type="button" aria-label="تبديل المظهر">☾</button>
+      </div>
+      <section class="display" aria-live="polite">
+        <div id="history" class="history">&nbsp;</div>
+        <output id="result">0</output>
+      </section>
+      <div class="keys" aria-label="أزرار الآلة الحاسبة">
+        <button class="action" data-action="clear">AC</button>
+        <button class="action" data-action="backspace" aria-label="حذف آخر رقم">⌫</button>
+        <button class="operator" data-value="%">%</button>
+        <button class="operator" data-value="÷">÷</button>
+        <button data-value="7">7</button><button data-value="8">8</button><button data-value="9">9</button><button class="operator" data-value="×">×</button>
+        <button data-value="4">4</button><button data-value="5">5</button><button data-value="6">6</button><button class="operator" data-value="−">−</button>
+        <button data-value="1">1</button><button data-value="2">2</button><button data-value="3">3</button><button class="operator" data-value="+">+</button>
+        <button data-action="sign">±</button><button class="wide" data-value="0">0</button><button data-value=".">.</button><button class="equals" data-action="equals">=</button>
+      </div>
+    </main>
+    <p class="hint">يمكنك استخدام لوحة المفاتيح أيضًا</p>
+    <script src="app.js"></script>
+  </body>
+</html>
