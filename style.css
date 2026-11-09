@@ -15,6 +15,8 @@ output { display:block; font-size:46px; font-weight:700; letter-spacing:-1px; wh
 .keys .action { color:#e24e61; font-size:18px; }
 .keys .equals { background:var(--accent); color:white; font-size:28px; }
 .keys .wide { grid-column:span 2; aspect-ratio:auto; }
+.keys .scientific { aspect-ratio:auto; min-height:42px; border-radius:13px; color:var(--accent); font-size:16px; font-weight:700; }
+.keys .mode { font-size:13px; color:var(--muted); }
 .hint { margin:0; text-align:center; color:var(--muted); font-size:14px; }
 body.dark { --bg:#101426; --card:#1b2037; --text:#f7f8ff; --muted:#aab1ce; --key:#282e49; --op:#313868; --accent:#827cff; --shadow:0 24px 60px rgba(0,0,0,.35); background:radial-gradient(circle at 15% 20%,#252a55 0,transparent 30%),var(--bg); }
 @media (max-width:400px) { .calculator { padding:18px; border-radius:22px; } .keys { gap:8px; } .keys button { border-radius:14px; } output { font-size:40px; } }
